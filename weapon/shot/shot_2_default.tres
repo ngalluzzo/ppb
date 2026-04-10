@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ShotPattern" format=3 uid="uid://davbo74f2om2s"]
+
+[ext_resource type="Resource" uid="uid://ck86yknh1tjvi" path="res://weapon/behaviors/arc_config/defaut_arc_config.tres" id="1_o6h6r"]
+[ext_resource type="Resource" path="res://weapon/behaviors/phase_line/phase_line_spin_default.tres" id="2_1nw8q"]
+[ext_resource type="Script" path="res://weapon/shot/shot_pattern.gd" id="3_kcj64"]
+[ext_resource type="Resource" path="res://roster/mobiles/ironclad/projectiles/ironclad_s2_projectile.tres" id="3_rj2el"]
+
+[resource]
+script = ExtResource("3_kcj64")
+projectile_def = ExtResource("3_rj2el")
+arc_config = ExtResource("1_o6h6r")
+unit_count = 2
+unit_spacing = 32.0
+phase_line = ExtResource("2_1nw8q")
+metadata/_custom_type_script = "uid://v0bkqsfo6jhj"

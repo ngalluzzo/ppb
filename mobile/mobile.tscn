@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://h5rj3a3lhvmw"]
+
+[ext_resource type="PackedScene" uid="uid://ondyya5c7mdf" path="res://weapon/cannon/cannon.tscn" id="1_if8gs"]
+[ext_resource type="Script" uid="uid://vc2b0furhtc0" path="res://mobile/mobile.gd" id="1_lcrsh"]
+[ext_resource type="Resource" uid="uid://dotk5cafvaafj" path="res://roster/mobiles/ironclad/ironclad_mobile_definition.tres" id="2_8f28n"]
+[ext_resource type="Script" uid="uid://bmfu8nn8ij7c6" path="res://mobile/stats/stat_container.gd" id="2_m1bpx"]
+[ext_resource type="Script" path="res://mobile/status/status_badge_container.gd" id="3_status_badges"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8f28n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8f28n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8f28n"]
+radius = 8.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_61iow"]
+radius = 8.0
+
+[node name="Mobile" type="CharacterBody2D" unique_id=271551038]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_lcrsh")
+mobile_def = ExtResource("2_8f28n")
+
+[node name="Body" type="AnimatedSprite2D" parent="." unique_id=392641647]
+sprite_frames = SubResource("SpriteFrames_8f28n")
+
+[node name="Shape" type="CollisionShape2D" parent="." unique_id=570236153]
+shape = SubResource("CapsuleShape2D_8f28n")
+
+[node name="Cannon" parent="." unique_id=459007138 instance=ExtResource("1_if8gs")]
+
+[node name="StatContainer" type="Node" parent="." unique_id=131320188]
+script = ExtResource("2_m1bpx")
+
+[node name="StatusBadgeContainer" type="Control" parent="." unique_id=171100222]
+z_index = 20
+mouse_filter = 1
+script = ExtResource("3_status_badges")
+
+[node name="Row" type="HBoxContainer" parent="StatusBadgeContainer" unique_id=645490812]
+theme_override_constants/separation = 4
+
+[node name="Hitbox" type="Node2D" parent="." unique_id=1592327946]
+
+[node name="Body" type="Area2D" parent="Hitbox" unique_id=1589375955]
+collision_layer = 8
+collision_mask = 0
+
+[node name="Silhouette" type="CollisionShape2D" parent="Hitbox/Body" unique_id=1649768135]
+shape = SubResource("CircleShape2D_8f28n")
+
+[node name="Core" type="Area2D" parent="Hitbox" unique_id=183278506]
+collision_layer = 8
+collision_mask = 0
+
+[node name="Weakpoint" type="CollisionShape2D" parent="Hitbox/Core" unique_id=1718598618]
+shape = SubResource("CircleShape2D_61iow")

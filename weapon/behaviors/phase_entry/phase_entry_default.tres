@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PhaseEntry" format=3 uid="uid://cxy53se428rcl"]
+
+[ext_resource type="Script" uid="uid://bm0whathamc18" path="res://weapon/behaviors/phase_entry/phase_entry.gd" id="1_7ly0h"]
+[ext_resource type="Resource" uid="uid://cckds3y0qw6vl" path="res://weapon/behaviors/diameter_spin/diameter_spin_default.tres" id="1_10p0d"]
+
+[resource]
+script = ExtResource("1_7ly0h")
+behavior = ExtResource("1_10p0d")
+metadata/_custom_type_script = "uid://bm0whathamc18"

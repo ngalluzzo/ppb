@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="ArcConfig" format=3 uid="uid://ck86yknh1tjvi"]
+
+[ext_resource type="Script" uid="uid://bor2ceia4ad8q" path="res://weapon/behaviors/arc_config/arc_config.gd" id="1_tvelf"]
+
+[resource]
+script = ExtResource("1_tvelf")
+metadata/_custom_type_script = "uid://bor2ceia4ad8q"

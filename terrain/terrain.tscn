@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ci3mxm1ppn5tk"]
+
+[ext_resource type="TileSet" uid="uid://dvg14kog32jhi" path="res://terrain/tilesets/grass.tres" id="1_0rasl"]
+[ext_resource type="Script" uid="uid://udvwaw1q2kxv" path="res://terrain/terrain.gd" id="1_j6q8d"]
+
+[node name="Terrain" type="TileMapLayer" unique_id=231612122]
+tile_set = ExtResource("1_0rasl")
+script = ExtResource("1_j6q8d")

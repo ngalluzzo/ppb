@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="WeatherDefinition" format=3 uid="uid://uqq1aoxpafpo"]
+
+[ext_resource type="Script" uid="uid://dltwhawvm3cvy" path="res://battle/weather/resources/weather_definition.gd" id="1_def"]
+[ext_resource type="Script" uid="uid://b670u3q444wp6" path="res://battle/weather/modifiers/damage_scalar_modifier.gd" id="3_damage_script"]
+[ext_resource type="Script" uid="uid://bfe8ruhq34x10" path="res://battle/weather/modifiers/charge_rate_modifier.gd" id="4_charge_script"]
+[ext_resource type="Script" path="res://battle/weather/resources/weather_status_effect.gd" id="5_status_effect_script"]
+[ext_resource type="Resource" path="res://roster/statuses/charged.tres" id="6_charged"]
+[ext_resource type="Script" path="res://battle/weather/resources/target_rules/active_controller_target_rule.gd" id="7_target_rule"]
+
+[sub_resource type="Resource" id="DamageScalarModifier_storm_charge"]
+script = ExtResource("3_damage_script")
+damage_scalar = 1.2
+
+[sub_resource type="Resource" id="ChargeRateModifier_storm_charge"]
+script = ExtResource("4_charge_script")
+charge_rate_scalar = 1.25
+
+[sub_resource type="Resource" id="ActiveControllerTargetRule_storm_charge"]
+script = ExtResource("7_target_rule")
+
+[sub_resource type="Resource" id="WeatherStatusEffect_storm_charge"]
+script = ExtResource("5_status_effect_script")
+status_definition = ExtResource("6_charged")
+target_rule = SubResource("ActiveControllerTargetRule_storm_charge")
+
+[resource]
+script = ExtResource("1_def")
+display_name = "Storm Charge"
+description = "Static energy accelerates charge and amplifies impacts."
+forecast_color = Color(0.57, 0.88, 0.95, 1)
+modifiers = Array[Resource]([SubResource("DamageScalarModifier_storm_charge"), SubResource("ChargeRateModifier_storm_charge")])
+turn_start_status_effects = Array[Resource]([SubResource("WeatherStatusEffect_storm_charge")])

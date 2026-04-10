@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="WeatherDefinition" format=3 uid="uid://bv606m80c6cya"]
+
+[ext_resource type="Script" uid="uid://dltwhawvm3cvy" path="res://battle/weather/resources/weather_definition.gd" id="1_def"]
+[ext_resource type="Script" uid="uid://ce42vaw7bd6b0" path="res://battle/weather/modifiers/power_scalar_modifier.gd" id="3_power_script"]
+[ext_resource type="Script" path="res://battle/weather/resources/weather_status_effect.gd" id="4_status_effect_script"]
+[ext_resource type="Resource" path="res://roster/statuses/inspired.tres" id="5_inspired"]
+[ext_resource type="Script" path="res://battle/weather/resources/target_rules/active_controller_target_rule.gd" id="6_target_rule"]
+
+[sub_resource type="Resource" id="PowerScalarModifier_force_front"]
+script = ExtResource("3_power_script")
+power_scalar = 1.18
+
+[sub_resource type="Resource" id="ActiveControllerTargetRule_force_front"]
+script = ExtResource("6_target_rule")
+
+[sub_resource type="Resource" id="WeatherStatusEffect_force_front"]
+script = ExtResource("4_status_effect_script")
+status_definition = ExtResource("5_inspired")
+target_rule = SubResource("ActiveControllerTargetRule_force_front")
+
+[resource]
+script = ExtResource("1_def")
+display_name = "Force Front"
+description = "Charged air carries shots farther."
+forecast_color = Color(0.99, 0.79, 0.28, 1)
+modifiers = Array[Resource]([SubResource("PowerScalarModifier_force_front")])
+turn_start_status_effects = Array[Resource]([SubResource("WeatherStatusEffect_force_front")])

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DiameterSpin" format=3 uid="uid://b46b4j5gfyf8l"]
+
+[ext_resource type="Script" uid="uid://cvpyi2cdu5oti" path="res://weapon/behaviors/diameter_spin/diameter_spin.gd" id="1_hv6q0"]
+
+[resource]
+script = ExtResource("1_hv6q0")
+continuous = true

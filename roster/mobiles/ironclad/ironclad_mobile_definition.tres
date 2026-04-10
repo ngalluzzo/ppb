@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="MobileDefinition" format=3 uid="uid://dotk5cafvaafj"]
+
+[ext_resource type="Resource" uid="uid://l0y7m5oqnaop" path="res://weapon/cannon/cannon_default.tres" id="1_7tqrj"]
+[ext_resource type="Script" uid="uid://bxnuie7fk7ftq" path="res://mobile/mobile_definition.gd" id="1_hon1c"]
+[ext_resource type="Resource" uid="uid://udl8kkwiw0wc" path="res://weapon/shot/shot_1_default.tres" id="3_qpcmp"]
+[ext_resource type="Resource" uid="uid://davbo74f2om2s" path="res://weapon/shot/shot_2_default.tres" id="4_hc2mc"]
+[ext_resource type="Resource" uid="uid://4va8usuq4r0e" path="res://weapon/shot/shot_3_default.tres" id="5_maofg"]
+[ext_resource type="Resource" uid="uid://c7km666aknh6o" path="res://mobile/stats/stat_def_default.tres" id="6_b746c"]
+
+[resource]
+script = ExtResource("1_hon1c")
+name = "Ironclad"
+cannon_def = ExtResource("1_7tqrj")
+stat_def = ExtResource("6_b746c")
+shot_1 = ExtResource("3_qpcmp")
+shot_2 = ExtResource("4_hc2mc")
+shot_ss = ExtResource("5_maofg")
+sprite_path = "res://roster/mobiles/ironclad/sprites/"
+sprite_stem = "ironclad"
+metadata/_custom_type_script = "uid://bxnuie7fk7ftq"

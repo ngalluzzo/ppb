@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cs465uvqxvwt"]
+
+[ext_resource type="Script" uid="uid://d1ukvgnrvvrxf" path="res://terrain/impact/tile_fragment.gd" id="1_u3qdy"]
+
+[node name="TileFragment" type="Sprite2D" unique_id=995429300]
+script = ExtResource("1_u3qdy")

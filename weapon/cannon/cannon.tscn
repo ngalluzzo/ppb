@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ondyya5c7mdf"]
+
+[ext_resource type="Script" uid="uid://dj1tett1y4yge" path="res://weapon/cannon/cannon.gd" id="1_ngsxi"]
+[ext_resource type="Script" uid="uid://ecpq63ieofmw" path="res://weapon/cannon/firing_mechanism.gd" id="2_p6yhs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p6yhs"]
+
+[node name="Cannon" type="Node2D" unique_id=459007138]
+script = ExtResource("1_ngsxi")
+
+[node name="BarrelPivot" type="Node2D" parent="." unique_id=1946937405]
+
+[node name="Barrel" type="AnimatedSprite2D" parent="BarrelPivot" unique_id=432781836]
+sprite_frames = SubResource("SpriteFrames_p6yhs")
+
+[node name="Muzzle" type="Marker2D" parent="BarrelPivot" unique_id=363825396]
+
+[node name="FiringMechanism" type="Node" parent="." unique_id=1457929152]
+process_mode = 4
+script = ExtResource("2_p6yhs")

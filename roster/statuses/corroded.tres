@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="StatusDefinition" format=3]
+
+[ext_resource type="Script" path="res://mobile/status/status_definition.gd" id="1_status_script"]
+[ext_resource type="Script" path="res://mobile/stats/stat_modifier.gd" id="2_modifier_script"]
+
+[sub_resource type="Resource" id="StatModifier_corroded_armor"]
+script = ExtResource("2_modifier_script")
+stat = "armor"
+amount = -20.0
+
+[resource]
+script = ExtResource("1_status_script")
+display_name = "Corroded"
+description = "Corrosion eats through outer plating."
+duration_turns = 2
+polarity = 1
+tint = Color(0.78, 0.39, 0.24, 1)
+short_label = "CR"
+priority = 3
+tags = PackedStringArray("weather", "corroded", "defense")
+modifiers = Array[ExtResource("2_modifier_script")]([SubResource("StatModifier_corroded_armor")])

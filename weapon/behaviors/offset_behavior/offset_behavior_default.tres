@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="OffsetBehavior" format=3 uid="uid://cgndora3w5bx2"]
+
+[ext_resource type="Script" uid="uid://bqfsn8xycvcyg" path="res://weapon/behaviors/offset_behavior/offset_behavior.gd" id="1_xnhn6"]
+
+[resource]
+script = ExtResource("1_xnhn6")
+metadata/_custom_type_script = "uid://bqfsn8xycvcyg"

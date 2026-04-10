@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusDefinition" format=3 uid="uid://cfh0kviwkpykq"]
+
+[ext_resource type="Script" uid="uid://ttrl78q21xsr" path="res://mobile/status/status_definition.gd" id="1_status_script"]
+[ext_resource type="Script" uid="uid://b0383ubr27yqd" path="res://mobile/stats/stat_modifier.gd" id="2_modifier_script"]
+
+[sub_resource type="Resource" id="StatModifier_inspired_damage"]
+script = ExtResource("2_modifier_script")
+stat = "damage_dealt"
+modifier_type = 1
+amount = 0.1
+
+[resource]
+script = ExtResource("1_status_script")
+display_name = "Inspired"
+description = "Momentum and confidence sharpen the next barrage."
+polarity = 0
+tint = Color(0.99, 0.79, 0.31, 1)
+short_label = "IN"
+priority = 1
+modifiers = Array[Resource]([SubResource("StatModifier_inspired_damage")])

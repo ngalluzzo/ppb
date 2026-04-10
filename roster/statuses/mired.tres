@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusDefinition" format=3 uid="uid://d4aokjc88w38r"]
+
+[ext_resource type="Script" uid="uid://ttrl78q21xsr" path="res://mobile/status/status_definition.gd" id="1_status_script"]
+[ext_resource type="Script" uid="uid://b0383ubr27yqd" path="res://mobile/stats/stat_modifier.gd" id="2_modifier_script"]
+
+[sub_resource type="Resource" id="StatModifier_mired_thrust"]
+script = ExtResource("2_modifier_script")
+stat = "thrust"
+modifier_type = 1
+amount = -0.25
+
+[resource]
+script = ExtResource("1_status_script")
+display_name = "Mired"
+description = "Dense air and drag sap the unit's repositioning power."
+polarity = 1
+tint = Color(0.53, 0.41, 0.27, 1)
+short_label = "MI"
+priority = 2
+modifiers = Array[Resource]([SubResource("StatModifier_mired_thrust")])

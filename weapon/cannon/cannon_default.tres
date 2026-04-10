@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CannonDefinition" format=3 uid="uid://l0y7m5oqnaop"]
+
+[ext_resource type="Script" uid="uid://cbhg8yoe24yho" path="res://weapon/cannon/cannon_definition.gd" id="1_0aeoy"]
+
+[resource]
+script = ExtResource("1_0aeoy")
+name = "Default Cannon"
+metadata/_custom_type_script = "uid://cbhg8yoe24yho"

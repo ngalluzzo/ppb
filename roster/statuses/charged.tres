@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusDefinition" format=3 uid="uid://c11mebnwsriyy"]
+
+[ext_resource type="Script" uid="uid://ttrl78q21xsr" path="res://mobile/status/status_definition.gd" id="1_status_script"]
+[ext_resource type="Script" uid="uid://b0383ubr27yqd" path="res://mobile/stats/stat_modifier.gd" id="2_modifier_script"]
+
+[sub_resource type="Resource" id="StatModifier_charged_damage"]
+script = ExtResource("2_modifier_script")
+stat = "damage_dealt"
+modifier_type = 1
+amount = 0.15
+
+[resource]
+script = ExtResource("1_status_script")
+display_name = "Charged"
+description = "Static buildup empowers outgoing attacks."
+polarity = 0
+tint = Color(0.31, 0.82, 1, 1)
+short_label = "CH"
+priority = 2
+modifiers = Array[Resource]([SubResource("StatModifier_charged_damage")])

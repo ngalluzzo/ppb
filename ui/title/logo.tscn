@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://di5mpg3153cen"]
+
+[ext_resource type="Script" uid="uid://d0kyidvaf4omo" path="res://ui/title/logo.gd" id="1_w8t5y"]
+[ext_resource type="Texture2D" uid="uid://bki21ykwaceos" path="res://assets/logo/logo_bots.png" id="2_8wvbp"]
+[ext_resource type="Texture2D" uid="uid://c7wb4d70lpfij" path="res://assets/logo/logo_pewpew.png" id="3_fbwx8"]
+[ext_resource type="Texture2D" uid="uid://cdddfrw1wlqsy" path="res://assets/logo/cable.png" id="4_tectj"]
+[ext_resource type="Texture2D" uid="uid://dmlxhr2a3aqlt" path="res://assets/logo/head.png" id="5_mpt4n"]
+[ext_resource type="Texture2D" uid="uid://3uewlh0fa1li" path="res://assets/logo/glow.png" id="6_amd53"]
+[ext_resource type="Texture2D" uid="uid://b5tbkg2b66egs" path="res://assets/logo/sheen.png" id="7_e65hf"]
+
+[node name="PewPewBotsLogo" type="Control" unique_id=1584539482]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -768.0
+offset_top = -384.0
+offset_right = 768.0
+offset_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_w8t5y")
+
+[node name="Shadow" type="TextureRect" parent="." unique_id=1422686324]
+modulate = Color(1, 1, 1, 0.55)
+layout_mode = 0
+offset_left = 260.0
+offset_top = 510.0
+offset_right = 1276.0
+offset_bottom = 708.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Bots" type="TextureRect" parent="." unique_id=1366123183]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 256.0
+offset_right = 1274.0
+offset_bottom = 646.0
+mouse_filter = 2
+texture = ExtResource("2_8wvbp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PewPew" type="TextureRect" parent="." unique_id=1850887201]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 78.0
+offset_right = 1348.0
+offset_bottom = 404.0
+mouse_filter = 2
+texture = ExtResource("3_fbwx8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CablePivot" type="Control" parent="." unique_id=657184967]
+anchors_preset = 0
+offset_left = 1140.0
+offset_top = 214.0
+offset_right = 1140.0
+offset_bottom = 214.0
+rotation = -0.12
+mouse_filter = 2
+
+[node name="Cable" type="TextureRect" parent="CablePivot" unique_id=555373922]
+layout_mode = 0
+offset_left = -18.0
+offset_right = 42.0
+offset_bottom = 170.0
+mouse_filter = 2
+texture = ExtResource("4_tectj")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Head" type="TextureRect" parent="CablePivot" unique_id=1488709522]
+layout_mode = 0
+offset_left = -54.0
+offset_top = 126.0
+offset_right = 256.0
+offset_bottom = 436.0
+rotation = 0.1
+mouse_filter = 2
+texture = ExtResource("5_mpt4n")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="EyeGlow" type="TextureRect" parent="CablePivot/Head" unique_id=1336535925]
+modulate = Color(1, 1, 1, 0.82)
+layout_mode = 0
+offset_left = 78.0
+offset_top = 78.0
+offset_right = 186.0
+offset_bottom = 186.0
+mouse_filter = 2
+texture = ExtResource("6_amd53")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SheenOverlay" type="TextureRect" parent="." unique_id=185066676]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 184.0
+offset_top = 78.0
+offset_right = 1348.0
+offset_bottom = 646.0
+mouse_filter = 2
+texture = ExtResource("7_e65hf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=834852344]

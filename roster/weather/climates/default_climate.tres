@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ClimateDefinition" format=3]
+
+[ext_resource type="Script" path="res://battle/weather/resources/climate_definition.gd" id="1_climate_script"]
+[ext_resource type="Resource" path="res://roster/weather/forecast_pools/default_forecast_pool.tres" id="2_forecast_pool"]
+
+[resource]
+script = ExtResource("1_climate_script")
+display_name = "Temperate Skies"
+wind_min_strength = 20.0
+wind_max_strength = 80.0
+allowed_forecast_pool = ExtResource("2_forecast_pool")
+default_forecast_length = 5
+default_event_interval_turns = 2
+theme_color = Color(0.6, 0.86, 1, 1)
+background_tint = Color(0.7, 0.85, 1, 0.08)

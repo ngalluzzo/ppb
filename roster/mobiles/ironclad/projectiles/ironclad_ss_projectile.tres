@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ProjectileDefinition" format=3]
+
+[ext_resource type="Script" uid="uid://dfmijyxe8l4kg" path="res://weapon/projectile/projectile_definition.gd" id="1_proj"]
+[ext_resource type="Resource" uid="uid://dq763qjhe7t83" path="res://weapon/shot/impact/impact_def_default.tres" id="2_impact"]
+[ext_resource type="Texture2D" uid="uid://bx8ybyal6n7ht" path="res://assets/projectiles/ironclad/ironclad_ss_projectile.png" id="3_sprite"]
+
+[resource]
+script = ExtResource("1_proj")
+name = "Ironclad SS Projectile"
+impact_def = ExtResource("2_impact")
+sprite_sheet = ExtResource("3_sprite")
+frame_size = Vector2i(32, 32)
+frame_count = 6

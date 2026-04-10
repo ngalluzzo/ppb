@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://baghft0gf2bp3"]
+
+[ext_resource type="Script" uid="uid://mkbqoycvctxu" path="res://battle/hud/battle_overlay.gd" id="1_qgfn7"]
+
+[node name="BattleOverlay" type="Control" unique_id=1528511776]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qgfn7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=735749343]
+layout_mode = 1
+offset_right = 280.0
+offset_bottom = 112.0
+
+[node name="AngleLabel" type="Label" parent="VBoxContainer" unique_id=1132115635]
+layout_mode = 2
+text = "ANGLE"
+
+[node name="PowerBar" type="ProgressBar" parent="VBoxContainer" unique_id=2039153972]
+custom_minimum_size = Vector2(150, 20)
+layout_mode = 2
+show_percentage = false
+
+[node name="ThrustLabel" type="Label" parent="VBoxContainer" unique_id=1447305539]
+layout_mode = 2
+text = "thrust: 0 / 0"
+
+[node name="TraversalLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "traversal: no active unit"
+
+[node name="StatusStrip" type="HBoxContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="WindLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "wind: 0"
+
+[node name="WeatherLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "weather: clear"
+
+[node name="ForecastLabel" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+autowrap_mode = 3
+text = "forecast: clear"

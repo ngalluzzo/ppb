@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ShotPattern" format=3 uid="uid://udl8kkwiw0wc"]
+
+[ext_resource type="Script" uid="uid://bor2ceia4ad8q" path="res://weapon/behaviors/arc_config/arc_config.gd" id="1_la2si"]
+[ext_resource type="Script" uid="uid://bm0whathamc18" path="res://weapon/behaviors/phase_entry/phase_entry.gd" id="2_4u8in"]
+[ext_resource type="Resource" uid="uid://b46b4j5gfyf8l" path="res://weapon/behaviors/diameter_spin/diameter_spin_continuous.tres" id="3_706yx"]
+[ext_resource type="Script" path="res://weapon/shot/shot_pattern.gd" id="3_w6pl4"]
+[ext_resource type="Script" uid="uid://kxl8v51lgbuy" path="res://weapon/behaviors/phase_line/phase_line.gd" id="4_njgep"]
+[ext_resource type="Script" uid="uid://de8xx34n3qc5g" path="res://weapon/shot/impact/impact_definition.gd" id="5_ctd0w"]
+[ext_resource type="Script" uid="uid://dfmijyxe8l4kg" path="res://weapon/projectile/projectile_definition.gd" id="6_f6ppu"]
+[ext_resource type="Texture2D" uid="uid://pbmqdj0voj4c" path="res://assets/projectiles/ironclad/ironclad_s1_projectile.png" id="7_ssy23"]
+
+[sub_resource type="Resource" id="Resource_g38yj"]
+script = ExtResource("1_la2si")
+metadata/_custom_type_script = "uid://bor2ceia4ad8q"
+
+[sub_resource type="Resource" id="Resource_gnbj1"]
+script = ExtResource("2_4u8in")
+behavior = ExtResource("3_706yx")
+metadata/_custom_type_script = "uid://bm0whathamc18"
+
+[sub_resource type="Resource" id="Resource_7etfm"]
+script = ExtResource("4_njgep")
+phases = Array[ExtResource("2_4u8in")]([SubResource("Resource_gnbj1")])
+metadata/_custom_type_script = "uid://kxl8v51lgbuy"
+
+[sub_resource type="Resource" id="Resource_qehlq"]
+script = ExtResource("5_ctd0w")
+drill_power = 5.0
+metadata/_custom_type_script = "uid://de8xx34n3qc5g"
+
+[sub_resource type="Resource" id="Resource_1we1j"]
+script = ExtResource("6_f6ppu")
+name = "Ironclad S1 Projectile"
+impact_def = SubResource("Resource_qehlq")
+sprite_sheet = ExtResource("7_ssy23")
+
+[resource]
+script = ExtResource("3_w6pl4")
+projectile_def = SubResource("Resource_1we1j")
+arc_config = SubResource("Resource_g38yj")
+unit_count = 3
+unit_spacing = 32.0
+phase_line = SubResource("Resource_7etfm")
+metadata/_custom_type_script = "uid://v0bkqsfo6jhj"

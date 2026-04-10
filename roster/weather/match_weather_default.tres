@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MatchWeatherConfig" format=3]
+
+[ext_resource type="Script" path="res://battle/weather/resources/match_weather_config.gd" id="1_config_script"]
+[ext_resource type="Resource" path="res://roster/weather/climates/default_climate.tres" id="2_default_climate"]
+
+[resource]
+script = ExtResource("1_config_script")
+climate = ExtResource("2_default_climate")
+forecast_length = 5
+event_interval_turns = 2

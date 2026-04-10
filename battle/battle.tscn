@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d0bt4chiatjp1"]
+
+[ext_resource type="Script" uid="uid://cpknmo4idw1rd" path="res://battle/battle.gd" id="1_6hnvb"]
+[ext_resource type="Script" uid="uid://dr02rawsqdgse" path="res://battle/battle_camera.gd" id="2_6hnvb"]
+[ext_resource type="PackedScene" uid="uid://baghft0gf2bp3" path="res://battle/hud/battle_overlay.tscn" id="3_qubjc"]
+[ext_resource type="Resource" uid="uid://biuxay3522n3s" path="res://battle/match/win_condition_last_standing.tres" id="4_win_condition"]
+[ext_resource type="Resource" path="res://roster/maps/grasslands/map_catalog_grasslands.tres" id="5_map_catalog"]
+[ext_resource type="Resource" uid="uid://dotk5cafvaafj" path="res://roster/mobiles/ironclad/ironclad_mobile_definition.tres" id="6_ironclad"]
+[ext_resource type="Script" uid="uid://bxnuie7fk7ftq" path="res://mobile/mobile_definition.gd" id="7_mobile_def_script"]
+[ext_resource type="Resource" path="res://roster/weather/match_weather_default.tres" id="8_weather_config"]
+[ext_resource type="PackedScene" uid="uid://dgcvqxc4as2ny" path="res://battle/battle_system.tscn" id="9_rxlun"]
+
+[node name="Battle" type="Node2D" unique_id=2033362581]
+script = ExtResource("1_6hnvb")
+win_condition = ExtResource("4_win_condition")
+map_catalog = ExtResource("5_map_catalog")
+weather_config = ExtResource("8_weather_config")
+team_a_mobiles = Array[ExtResource("7_mobile_def_script")]([ExtResource("6_ironclad")])
+team_b_mobiles = Array[ExtResource("7_mobile_def_script")]([ExtResource("6_ironclad")])
+
+[node name="BattleCamera" type="Camera2D" parent="." unique_id=377273660]
+script = ExtResource("2_6hnvb")
+
+[node name="BattleSystem" parent="." unique_id=1204416744 instance=ExtResource("9_rxlun")]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=912091457]
+
+[node name="BattleOverlay" parent="HUD" unique_id=1528511776 instance=ExtResource("3_qubjc")]

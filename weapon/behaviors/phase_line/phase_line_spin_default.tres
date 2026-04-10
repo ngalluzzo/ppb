@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PhaseLine" format=3]
+
+[ext_resource type="Resource" path="res://weapon/behaviors/phase_entry/phase_entry_spin_default.tres" id="1_entry"]
+[ext_resource type="Script" uid="uid://bm0whathamc18" path="res://weapon/behaviors/phase_entry/phase_entry.gd" id="2_entry_script"]
+[ext_resource type="Script" uid="uid://kxl8v51lgbuy" path="res://weapon/behaviors/phase_line/phase_line.gd" id="3_line_script"]
+
+[resource]
+script = ExtResource("3_line_script")
+phases = Array[ExtResource("2_entry_script")]([ExtResource("1_entry")])
+metadata/_custom_type_script = "uid://kxl8v51lgbuy"

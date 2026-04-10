@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PhaseLine" format=3 uid="uid://b2nhi51tcudcm"]
+
+[ext_resource type="Resource" uid="uid://cxy53se428rcl" path="res://weapon/behaviors/phase_entry/phase_entry_default.tres" id="1_3485t"]
+[ext_resource type="Script" uid="uid://bm0whathamc18" path="res://weapon/behaviors/phase_entry/phase_entry.gd" id="1_t602r"]
+[ext_resource type="Script" uid="uid://kxl8v51lgbuy" path="res://weapon/behaviors/phase_line/phase_line.gd" id="2_50pcu"]
+
+[resource]
+script = ExtResource("2_50pcu")
+phases = Array[ExtResource("1_t602r")]([ExtResource("1_3485t")])
+metadata/_custom_type_script = "uid://kxl8v51lgbuy"

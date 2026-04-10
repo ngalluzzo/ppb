@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="StatusDefinition" format=3]
+
+[ext_resource type="Script" path="res://mobile/status/status_definition.gd" id="1_status_script"]
+[ext_resource type="Script" path="res://mobile/stats/stat_modifier.gd" id="2_modifier_script"]
+
+[sub_resource type="Resource" id="StatModifier_soaked_weight"]
+script = ExtResource("2_modifier_script")
+stat = "weight"
+amount = 0.5
+
+[sub_resource type="Resource" id="StatModifier_soaked_damage_taken"]
+script = ExtResource("2_modifier_script")
+stat = "damage_taken"
+modifier_type = 1
+amount = 0.1
+
+[resource]
+script = ExtResource("1_status_script")
+display_name = "Soaked"
+description = "Moisture makes the chassis heavier and more vulnerable."
+duration_turns = 2
+polarity = 1
+tint = Color(0.34, 0.6, 0.92, 1)
+short_label = "SO"
+priority = 2
+tags = PackedStringArray("weather", "soaked", "wet")
+modifiers = Array[ExtResource("2_modifier_script")]([SubResource("StatModifier_soaked_weight"), SubResource("StatModifier_soaked_damage_taken")])

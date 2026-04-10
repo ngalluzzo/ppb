@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="WeatherDefinition" format=3 uid="uid://cwmxf365eplkn"]
+
+[ext_resource type="Script" uid="uid://dltwhawvm3cvy" path="res://battle/weather/resources/weather_definition.gd" id="1_def"]
+[ext_resource type="Script" uid="uid://c363ob6f8fwty" path="res://battle/weather/modifiers/ballistic_gravity_modifier.gd" id="3_gravity_script"]
+[ext_resource type="Script" path="res://battle/weather/resources/weather_status_effect.gd" id="4_status_effect_script"]
+[ext_resource type="Resource" path="res://roster/statuses/mired.tres" id="5_mired"]
+[ext_resource type="Script" path="res://battle/weather/resources/target_rules/active_controller_target_rule.gd" id="6_target_rule"]
+
+[sub_resource type="Resource" id="BallisticGravityModifier_heavy_air"]
+script = ExtResource("3_gravity_script")
+gravity_multiplier = 1.25
+
+[sub_resource type="Resource" id="ActiveControllerTargetRule_heavy_air"]
+script = ExtResource("6_target_rule")
+
+[sub_resource type="Resource" id="WeatherStatusEffect_heavy_air"]
+script = ExtResource("4_status_effect_script")
+status_definition = ExtResource("5_mired")
+target_rule = SubResource("ActiveControllerTargetRule_heavy_air")
+
+[resource]
+script = ExtResource("1_def")
+display_name = "Heavy Air"
+description = "Dense air drags shells downward."
+forecast_color = Color(0.56, 0.67, 0.85, 1)
+modifiers = Array[Resource]([SubResource("BallisticGravityModifier_heavy_air")])
+turn_start_status_effects = Array[Resource]([SubResource("WeatherStatusEffect_heavy_air")])

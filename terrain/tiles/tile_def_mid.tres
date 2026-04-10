@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TileDefinition" format=3 uid="uid://c3kgmb1aj0gn7"]
+
+[ext_resource type="Script" uid="uid://b1hxtdetp2wwy" path="res://terrain/tiles/tile_definition.gd" id="1_dldg5"]
+
+[resource]
+script = ExtResource("1_dldg5")
+tile_type = "mid"
+hp = 2
+metadata/_custom_type_script = "uid://b1hxtdetp2wwy"

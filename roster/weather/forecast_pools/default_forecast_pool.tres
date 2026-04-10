@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ForecastPool" format=3 uid="uid://bymxqquld03x0"]
+
+[ext_resource type="Script" uid="uid://dspbggt5mtpx7" path="res://battle/weather/resources/forecast_pool.gd" id="1_pool_script"]
+[ext_resource type="Script" uid="uid://bwb5grgk43oua" path="res://battle/weather/resources/forecast_pool_entry.gd" id="2_entry_script"]
+[ext_resource type="Resource" uid="uid://bv606m80c6cya" path="res://roster/weather/events/force_front.tres" id="3_force_front"]
+[ext_resource type="Resource" uid="uid://cwmxf365eplkn" path="res://roster/weather/events/heavy_air.tres" id="4_heavy_air"]
+[ext_resource type="Resource" uid="uid://uqq1aoxpafpo" path="res://roster/weather/events/storm_charge.tres" id="5_storm_charge"]
+
+[sub_resource type="Resource" id="ForecastPoolEntry_force_front"]
+script = ExtResource("2_entry_script")
+weather = ExtResource("3_force_front")
+
+[sub_resource type="Resource" id="ForecastPoolEntry_heavy_air"]
+script = ExtResource("2_entry_script")
+weather = ExtResource("4_heavy_air")
+
+[sub_resource type="Resource" id="ForecastPoolEntry_storm_charge"]
+script = ExtResource("2_entry_script")
+weather = ExtResource("5_storm_charge")
+
+[resource]
+script = ExtResource("1_pool_script")
+entries = Array[Resource]([SubResource("ForecastPoolEntry_force_front"), SubResource("ForecastPoolEntry_heavy_air"), SubResource("ForecastPoolEntry_storm_charge")])

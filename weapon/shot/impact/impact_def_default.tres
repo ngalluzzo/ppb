@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ImpactDefinition" format=3 uid="uid://dq763qjhe7t83"]
+
+[ext_resource type="Script" uid="uid://de8xx34n3qc5g" path="res://weapon/shot/impact/impact_definition.gd" id="1_ttl2h"]
+
+[resource]
+script = ExtResource("1_ttl2h")
+drill_power = 5.0
+metadata/_custom_type_script = "uid://de8xx34n3qc5g"

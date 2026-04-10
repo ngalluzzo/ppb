@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" shape-rendering="crispEdges">
+  <defs>
+    <symbol id="surface_a" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#6d4527"/>
+      <rect width="16" height="4" fill="#7bd35d"/>
+      <rect y="4" width="16" height="2" fill="#479640"/>
+      <rect y="6" width="16" height="1" fill="#345f2c"/>
+      <rect x="1" y="2" width="2" height="2" fill="#98e874"/>
+      <rect x="5" y="1" width="1" height="3" fill="#98e874"/>
+      <rect x="10" y="2" width="2" height="2" fill="#98e874"/>
+      <rect x="13" y="1" width="1" height="3" fill="#98e874"/>
+      <rect x="3" y="8" width="2" height="2" fill="#8a5a35"/>
+      <rect x="11" y="11" width="2" height="2" fill="#8a5a35"/>
+      <rect x="7" y="10" width="1" height="4" fill="#4e2f1b"/>
+    </symbol>
+    <symbol id="surface_b" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#734926"/>
+      <rect width="16" height="3" fill="#84d861"/>
+      <rect y="3" width="16" height="3" fill="#58a34a"/>
+      <rect y="6" width="16" height="1" fill="#2f5d27"/>
+      <rect x="2" y="1" width="1" height="3" fill="#a4ec80"/>
+      <rect x="7" y="0" width="2" height="4" fill="#a4ec80"/>
+      <rect x="12" y="1" width="1" height="3" fill="#a4ec80"/>
+      <rect x="4" y="4" width="1" height="1" fill="#ffd7f0"/>
+      <rect x="5" y="3" width="1" height="2" fill="#ff72c5"/>
+      <rect x="10" y="4" width="1" height="1" fill="#fff0a3"/>
+      <rect x="11" y="3" width="1" height="2" fill="#ffd44c"/>
+      <rect x="2" y="10" width="3" height="2" fill="#8d603a"/>
+      <rect x="12" y="9" width="2" height="2" fill="#8d603a"/>
+    </symbol>
+    <symbol id="surface_c" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#6a4328"/>
+      <rect width="16" height="4" fill="#75cc56"/>
+      <rect y="4" width="16" height="2" fill="#4f9943"/>
+      <rect y="6" width="16" height="1" fill="#2f5826"/>
+      <rect x="1" y="1" width="1" height="3" fill="#96e56f"/>
+      <rect x="4" y="2" width="2" height="2" fill="#96e56f"/>
+      <rect x="8" y="1" width="1" height="3" fill="#96e56f"/>
+      <rect x="13" y="2" width="2" height="2" fill="#96e56f"/>
+      <rect x="3" y="8" width="10" height="1" fill="#81502f"/>
+      <rect x="5" y="11" width="6" height="1" fill="#81502f"/>
+      <rect x="2" y="13" width="2" height="1" fill="#4f311d"/>
+      <rect x="12" y="13" width="2" height="1" fill="#4f311d"/>
+    </symbol>
+    <symbol id="surface_d" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#704726"/>
+      <rect width="16" height="3" fill="#89dd68"/>
+      <rect y="3" width="16" height="2" fill="#5ca84d"/>
+      <rect y="5" width="16" height="2" fill="#36642d"/>
+      <rect x="0" y="2" width="2" height="2" fill="#a4ee82"/>
+      <rect x="6" y="1" width="1" height="4" fill="#a4ee82"/>
+      <rect x="9" y="2" width="1" height="3" fill="#a4ee82"/>
+      <rect x="13" y="1" width="2" height="3" fill="#a4ee82"/>
+      <rect x="2" y="9" width="2" height="2" fill="#909090"/>
+      <rect x="11" y="10" width="3" height="2" fill="#909090"/>
+      <rect x="6" y="8" width="1" height="5" fill="#4b2d19"/>
+    </symbol>
+    <symbol id="mid_a" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#6a4226"/>
+      <rect width="16" height="2" fill="#50743f"/>
+      <rect x="1" y="4" width="3" height="2" fill="#845733"/>
+      <rect x="6" y="7" width="4" height="2" fill="#855a35"/>
+      <rect x="12" y="3" width="2" height="2" fill="#8f623d"/>
+      <rect x="3" y="10" width="1" height="4" fill="#4b2e1a"/>
+      <rect x="8" y="9" width="1" height="5" fill="#4b2e1a"/>
+      <rect x="13" y="8" width="1" height="4" fill="#4b2e1a"/>
+      <rect x="5" y="12" width="2" height="2" fill="#99704b"/>
+    </symbol>
+    <symbol id="mid_b" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#714928"/>
+      <rect width="16" height="2" fill="#48683b"/>
+      <rect x="2" y="5" width="2" height="2" fill="#8a5e39"/>
+      <rect x="6" y="4" width="3" height="2" fill="#8a5e39"/>
+      <rect x="11" y="8" width="3" height="2" fill="#8a5e39"/>
+      <rect x="1" y="9" width="2" height="2" fill="#909090"/>
+      <rect x="8" y="11" width="2" height="2" fill="#909090"/>
+      <rect x="4" y="8" width="1" height="6" fill="#52321e"/>
+      <rect x="12" y="3" width="1" height="5" fill="#52321e"/>
+    </symbol>
+    <symbol id="mid_c" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#6c4527"/>
+      <rect width="16" height="2" fill="#516c3e"/>
+      <rect x="1" y="3" width="2" height="1" fill="#8d5f38"/>
+      <rect x="4" y="6" width="3" height="2" fill="#8d5f38"/>
+      <rect x="10" y="4" width="4" height="2" fill="#8d5f38"/>
+      <rect x="2" y="9" width="11" height="1" fill="#80512f"/>
+      <rect x="4" y="12" width="8" height="1" fill="#80512f"/>
+      <rect x="1" y="10" width="1" height="4" fill="#4d2f1b"/>
+      <rect x="14" y="7" width="1" height="5" fill="#4d2f1b"/>
+    </symbol>
+    <symbol id="mid_d" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#754a2a"/>
+      <rect width="16" height="2" fill="#4a6a3c"/>
+      <rect x="2" y="4" width="2" height="2" fill="#966641"/>
+      <rect x="7" y="5" width="2" height="2" fill="#966641"/>
+      <rect x="11" y="4" width="3" height="2" fill="#966641"/>
+      <rect x="1" y="8" width="3" height="2" fill="#979797"/>
+      <rect x="10" y="10" width="2" height="2" fill="#979797"/>
+      <rect x="5" y="7" width="1" height="6" fill="#573420"/>
+      <rect x="13" y="7" width="1" height="5" fill="#573420"/>
+      <rect x="7" y="12" width="2" height="2" fill="#8b6038"/>
+    </symbol>
+    <symbol id="deep_a" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#653f24"/>
+      <rect x="2" y="3" width="2" height="2" fill="#8a5f39"/>
+      <rect x="9" y="2" width="3" height="2" fill="#8a5f39"/>
+      <rect x="5" y="7" width="6" height="1" fill="#7f512f"/>
+      <rect x="3" y="11" width="8" height="1" fill="#7f512f"/>
+      <rect x="1" y="8" width="2" height="2" fill="#8f8f8f"/>
+      <rect x="12" y="12" width="2" height="2" fill="#8f8f8f"/>
+      <rect x="6" y="1" width="1" height="5" fill="#4a2d1a"/>
+      <rect x="11" y="6" width="1" height="6" fill="#4a2d1a"/>
+    </symbol>
+    <symbol id="deep_b" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#5f3b22"/>
+      <rect x="1" y="4" width="4" height="2" fill="#865a34"/>
+      <rect x="9" y="6" width="3" height="2" fill="#865a34"/>
+      <rect x="4" y="10" width="2" height="2" fill="#8f8f8f"/>
+      <rect x="11" y="3" width="2" height="2" fill="#8f8f8f"/>
+      <rect x="7" y="2" width="1" height="5" fill="#482b19"/>
+      <rect x="2" y="9" width="1" height="4" fill="#482b19"/>
+      <rect x="12" y="10" width="1" height="4" fill="#482b19"/>
+      <rect x="7" y="13" width="5" height="1" fill="#794d2d"/>
+    </symbol>
+    <symbol id="deep_c" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#684126"/>
+      <rect x="2" y="2" width="2" height="2" fill="#91653e"/>
+      <rect x="6" y="5" width="3" height="2" fill="#91653e"/>
+      <rect x="11" y="8" width="2" height="2" fill="#91653e"/>
+      <rect x="1" y="7" width="13" height="1" fill="#7b4f2e"/>
+      <rect x="3" y="12" width="10" height="1" fill="#7b4f2e"/>
+      <rect x="5" y="9" width="2" height="2" fill="#989898"/>
+      <rect x="10" y="3" width="1" height="4" fill="#4d2e1b"/>
+      <rect x="13" y="10" width="1" height="4" fill="#4d2e1b"/>
+    </symbol>
+    <symbol id="deep_d" viewBox="0 0 16 16">
+      <rect width="16" height="16" fill="#623d23"/>
+      <rect x="1" y="3" width="3" height="2" fill="#875c38"/>
+      <rect x="7" y="4" width="2" height="2" fill="#875c38"/>
+      <rect x="11" y="7" width="3" height="2" fill="#875c38"/>
+      <rect x="4" y="8" width="3" height="2" fill="#919191"/>
+      <rect x="10" y="11" width="2" height="2" fill="#919191"/>
+      <rect x="2" y="9" width="1" height="4" fill="#452917"/>
+      <rect x="8" y="1" width="1" height="5" fill="#452917"/>
+      <rect x="13" y="5" width="1" height="6" fill="#452917"/>
+    </symbol>
+  </defs>
+
+  <rect width="128" height="128" fill="#5d3b23"/>
+
+  <use href="#surface_a" x="0" y="0"/>
+  <use href="#surface_b" x="16" y="0"/>
+  <use href="#surface_c" x="32" y="0"/>
+  <use href="#surface_d" x="48" y="0"/>
+  <use href="#surface_a" x="64" y="0"/>
+  <use href="#surface_b" x="80" y="0"/>
+  <use href="#surface_c" x="96" y="0"/>
+  <use href="#surface_d" x="112" y="0"/>
+
+  <use href="#surface_c" x="0" y="16"/>
+  <use href="#surface_d" x="16" y="16"/>
+  <use href="#surface_a" x="32" y="16"/>
+  <use href="#surface_b" x="48" y="16"/>
+  <use href="#surface_c" x="64" y="16"/>
+  <use href="#surface_d" x="80" y="16"/>
+  <use href="#surface_a" x="96" y="16"/>
+  <use href="#surface_b" x="112" y="16"/>
+
+  <use href="#mid_a" x="0" y="32"/>
+  <use href="#mid_b" x="16" y="32"/>
+  <use href="#mid_c" x="32" y="32"/>
+  <use href="#mid_d" x="48" y="32"/>
+  <use href="#mid_a" x="64" y="32"/>
+  <use href="#mid_b" x="80" y="32"/>
+  <use href="#mid_c" x="96" y="32"/>
+  <use href="#mid_d" x="112" y="32"/>
+
+  <use href="#mid_c" x="0" y="48"/>
+  <use href="#mid_d" x="16" y="48"/>
+  <use href="#mid_a" x="32" y="48"/>
+  <use href="#mid_b" x="48" y="48"/>
+  <use href="#mid_c" x="64" y="48"/>
+  <use href="#mid_d" x="80" y="48"/>
+  <use href="#mid_a" x="96" y="48"/>
+  <use href="#mid_b" x="112" y="48"/>
+
+  <use href="#mid_b" x="0" y="64"/>
+  <use href="#mid_c" x="16" y="64"/>
+  <use href="#mid_d" x="32" y="64"/>
+  <use href="#mid_a" x="48" y="64"/>
+  <use href="#mid_b" x="64" y="64"/>
+  <use href="#mid_c" x="80" y="64"/>
+  <use href="#mid_d" x="96" y="64"/>
+  <use href="#mid_a" x="112" y="64"/>
+
+  <use href="#deep_a" x="0" y="80"/>
+  <use href="#deep_b" x="16" y="80"/>
+  <use href="#deep_c" x="32" y="80"/>
+  <use href="#deep_d" x="48" y="80"/>
+  <use href="#deep_a" x="64" y="80"/>
+  <use href="#deep_b" x="80" y="80"/>
+  <use href="#deep_c" x="96" y="80"/>
+  <use href="#deep_d" x="112" y="80"/>
+
+  <use href="#deep_c" x="0" y="96"/>
+  <use href="#deep_d" x="16" y="96"/>
+  <use href="#deep_a" x="32" y="96"/>
+  <use href="#deep_b" x="48" y="96"/>
+  <use href="#deep_c" x="64" y="96"/>
+  <use href="#deep_d" x="80" y="96"/>
+  <use href="#deep_a" x="96" y="96"/>
+  <use href="#deep_b" x="112" y="96"/>
+
+  <use href="#deep_b" x="0" y="112"/>
+  <use href="#deep_c" x="16" y="112"/>
+  <use href="#deep_d" x="32" y="112"/>
+  <use href="#deep_a" x="48" y="112"/>
+  <use href="#deep_b" x="64" y="112"/>
+  <use href="#deep_c" x="80" y="112"/>
+  <use href="#deep_d" x="96" y="112"/>
+  <use href="#deep_a" x="112" y="112"/>
+</svg>

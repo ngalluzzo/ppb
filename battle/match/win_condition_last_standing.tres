@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="WinCondition" format=3 uid="uid://biuxay3522n3s"]
+
+[ext_resource type="Script" uid="uid://ueo5h1f77au1" path="res://battle/match/win_condition.gd" id="1_n2mpp"]
+
+[resource]
+script = ExtResource("1_n2mpp")
+display_name = "Last Standing"
+metadata/_custom_type_script = "uid://ueo5h1f77au1"

@@ -1,0 +1,46 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/status_badge_view.gd" id="1_script"]
+
+[node name="StatusBadgeView" type="PanelContainer"]
+custom_minimum_size = Vector2(34, 34)
+mouse_filter = 1
+script = ExtResource("1_script")
+
+[node name="Content" type="Control" parent="."]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="Content"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 29.0
+offset_bottom = 29.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ShortLabel" type="Label" parent="Content"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 6.0
+offset_right = 30.0
+offset_bottom = 28.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TurnsLabel" type="Label" parent="Content"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 1.0
+offset_right = 33.0
+offset_bottom = 12.0
+horizontal_alignment = 2
+
+[node name="StacksLabel" type="Label" parent="Content"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 22.0
+offset_right = 19.0
+offset_bottom = 33.0
+

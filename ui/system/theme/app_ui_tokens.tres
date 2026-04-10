@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="UIThemeTokens" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ui/system/theme/ui_tokens.gd" id="1_ui_tokens"]
+
+[resource]
+script = ExtResource("1_ui_tokens")
+surface_canvas = Color(0.08, 0.09, 0.11, 1)
+surface_panel = Color(0.14, 0.17, 0.20, 0.98)
+surface_panel_alt = Color(0.18, 0.21, 0.24, 0.98)
+surface_inset = Color(0.10, 0.12, 0.15, 1)
+surface_overlay = Color(0.05, 0.06, 0.08, 0.88)
+text_primary = Color(0.93, 0.94, 0.96, 1)
+text_muted = Color(0.69, 0.73, 0.78, 1)
+text_accent = Color(0.98, 0.86, 0.53, 1)
+text_danger = Color(0.96, 0.49, 0.49, 1)
+text_success = Color(0.54, 0.89, 0.67, 1)
+text_warning = Color(0.99, 0.82, 0.42, 1)
+accent_interactive = Color(0.40, 0.68, 0.95, 1)
+accent_highlight = Color(0.99, 0.78, 0.39, 1)
+accent_selection = Color(0.52, 0.80, 0.97, 1)
+accent_disabled = Color(0.36, 0.41, 0.47, 1)
+border_soft = Color(0.25, 0.31, 0.37, 1)
+border_strong = Color(0.41, 0.49, 0.57, 1)
+border_focus = Color(0.97, 0.78, 0.36, 1)
+spacing_xs = 4
+spacing_sm = 8
+spacing_md = 12
+spacing_lg = 18
+spacing_xl = 28
+radius_sm = 6
+radius_md = 10
+radius_lg = 14
+font_caption = 11
+font_body = 14
+font_label = 13
+font_section = 15
+font_title = 22
+font_display = 36
+motion_fast = 0.1
+motion_normal = 0.22
+motion_slow = 0.4
